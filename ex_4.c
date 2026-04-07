@@ -49,7 +49,7 @@ int main() {
 
         while(opcao != 0 && opcao != 1) {
             printf("\n Opcao Invalida! Digite somente 0 ou 1");
-            scanf("d", opcao);
+            scanf("d", &opcao);
             printf("\n Escolha a opcao: ");
         }
     } while(opcao == 0);

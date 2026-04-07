@@ -42,17 +42,17 @@ Use um loop for para mostrar (printf) todos os números inteiros entre 1 e 10.
 9. Tabuada Específica:
 Faça um programa em C que leia um número (int). O número deve ser validado (maior que 0 e menor que 11). Após, mostre a tabuada desse número (Ex: leu 5, mostrar 5x1=5, 5x2=10, ...).
 
-10. Todas as Tabuadas:
+9B. Todas as Tabuadas:
 Faça um programa em C que mostre a tabuada de todos os números entre 1 e 10 (use loops aninhados).
 
-11. Soma (1 a 10):
+10. Soma (1 a 10):
 Faça um programa em C que mostre a soma de todos os números inteiros entre 1 e 10.
 
 11. Soma (10 Números):
 Faça um programa em C que leia 10 números (usando scanf dentro de um loop). Antes de encerrar, mostre a soma dos 10 números lidos.
 
-12. Média (50 Notas):
-Faça um programa em C que leia 50 notas (float). Antes de encerrar, mostre a média das notas lidas.
+12. Média (3 Notas):
+Faça um programa em C que leia 3 notas (float). Antes de encerrar, mostre a média das notas lidas.
 
 13. Média (Flag Negativo):
 Faça um programa em C que leia uma série de notas (float) usando um loop while. A leitura termina quando for lida uma nota negativa (o "flag"). Antes de encerrar, mostre o total de notas lidas e a média das notas.
