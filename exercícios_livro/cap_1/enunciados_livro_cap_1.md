@@ -1,3 +1,4 @@
+# CAP 1
 ## Exercício 1: Identificando Erros
 O programa a seguir foi elaborado por um aluno. Identifique TODOS os erros e reescreva
 a versão correta, que deve compilar e executar sem problemas.
@@ -67,3 +68,6 @@ mas com as seguintes modificações:
  b) Dentro da moldura, exiba:
  - Seu nome (ou nome fictício)
  - Sua turma / curso
+ - O ano atual
+ c) Use system("cls") para limpar a tela antes de exibir a moldura.
+Opcional (bônus): tente criar um segundo desenho criativo com os caracteres gráficos
