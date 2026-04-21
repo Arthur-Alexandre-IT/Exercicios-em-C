@@ -1,46 +1,42 @@
 #include <stdio.h>
-#define N 10;
+#define N 10
 
 int main() {
-    float numeros[10], media, maior_valor, menor_valor, soma, acima_media[10];
-    int i = 0;
-    maior_valor = numeros[0];
-    menor_valor = numeros[0];
-    for(i; i < 10; i++) {
+    float numeros[N], media, maior_valor, menor_valor, soma = 0;
+
+    for(int i = 0; i < N; i++) {
         printf("Digite o %d° numero: ", i+1);
         scanf("%f", &numeros[i]);
         soma += numeros[i];
     };
 
-    for (i; i < 10; i++) {
-        maior_valor = (numeros[i] > maior_valor) ? numeros[i] : numeros[0];
+    maior_valor = numeros[0];
+    menor_valor = numeros[0];
+
+    for (int i = 1; i < N; i++) {
+        maior_valor = (numeros[i] > maior_valor) ? numeros[i] : maior_valor;
+        menor_valor = (numeros[i] < menor_valor) ? numeros[i] : menor_valor;
     };
 
-    for (i; i < 10; i++) {
-        menor_valor = numeros[0];
-        menor_valor = (numeros[i] < menor_valor) ? numeros[i] : numeros[0];
-    };
+    media = soma/N;
 
-    media = soma/10;
+    printf("\nSoma total: %.2f\n", soma);
+    printf("Media: %.2f\n", media);
+    printf("Maior Valor: %.2f\n", maior_valor);
+    printf("Menor Valor: %.2f\n", menor_valor);
 
-    for (i; i < 10; i++) {
+    printf("\nNumeros somente acima da media: \n");
+    for (int i = 0; i < N; i++) {
         if (numeros[i] > media) {
-            acima_media[i] = numeros[i];
+            printf("Indice [%d]: %.2f\n", i, numeros[i]);
         };
     };
 
-    for (i; i < 5; i++) {
-        float aux = numeros[i];
-        // 1 2 3 4 [5 6] 7 8 9 10
-        // 10 9 8 7 6 5 4 3 2 1
-        numeros[i] = numeros[10-i];
-        numeros[10-i] = numeros[i];
+    printf("\nVetor Invertido: \n");
+    for (int i = N - 1; i >= 0; i--) {
+        printf("%.2f | ", numeros[i]);
     };
+    printf("\n");
 
-    for (i; i < 10; i++) {
-        printf("%.2f, ",numeros[i]);
-    }
-
-    printf("\nSoma: %.2f\nMedia: %.2f\nMaior Valor: %.2f\nMenor Valor: %.2f", soma, media, maior_valor, menor_valor);
     return 0;
-}dadssdas
+}
