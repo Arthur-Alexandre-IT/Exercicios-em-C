@@ -1,4 +1,4 @@
-#Olá, pessoal! 
+# Olá, pessoal! 
 
 Criei este repositório para compartilhar meus estudos e ajudar quem deseja praticar a Linguagem C. O conteúdo reúne exercícios autorais e desafios propostos durante o curso de Análise e Desenvolvimento de Sistemas na UFPR.
 
